@@ -1,0 +1,129 @@
+/* Resetando estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #005a9c;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Contêiner centralizado */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Estilos para as seções */
+section {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #005a9c;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin: 0.5rem 0;
+}
+
+/* Estilo para o formulário de agendamento */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.8rem;
+    background-color: #005a9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003c6b;
+}
+
+/* Estilo para os botões de contato */
+a.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a.btn:hover {
+    background-color: #128c7e;
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}

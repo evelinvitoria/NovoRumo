@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação Novo Rumo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+
+    <header>
+        <h1>Associação Novo Rumo</h1>
+        <p>Desenvolvimento motor e social para crianças e adolescentes autistas</p>
+    </header>
+
+    <div class="container">
+        <section class="fundadora">
+            <h2>Sobre a Fundadora</h2>
+            <p>A Associação Novo Rumo foi criada por [Nome da Fundadora], uma profissional dedicada à inclusão e desenvolvimento de crianças com autismo. Seu trabalho é baseado na empatia, profissionalismo e amor pelo próximo.</p>
+        </section>
+
+        <section class="servicos">
+            <h2>Serviços e Terapias</h2>
+            <ul>
+                <li>Fonoaudiologia</li>
+                <li>Terapia Ocupacional</li>
+                <li>Psicopedagogia</li>
+                <li>Atendimento psicológico</li>
+                <li>Atividades esportivas</li>
+            </ul>
+        </section>
+
+        <section class="agenda">
+            <h2>Agenda de Atendimentos</h2>
+            <form action="processa_agenda.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="data">Data do Atendimento:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Envie uma mensagem ou agende um atendimento.</p>
+            <a href="https://wa.me/seunumero" class="btn">WhatsApp</a>
+            <a href="https://www.instagram.com/associacaonovorumo/" class="btn">Instagram</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>Associação Novo Rumo - Recife, PE</p>
+    </footer>
+</body>
+</html>
