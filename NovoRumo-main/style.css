@@ -1,0 +1,147 @@
+/* Resetando estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cores da paleta do espectro autista */
+:root {
+    --azul-claro: #5B9BD5;
+    --azul-escuro: #1F4E79;
+    --amarelo: #FFD966;
+    --vermelho: #C00000;
+    --branco: #FFFFFF;
+    --cinza-claro: #f4f4f4;
+}
+
+/* Estilização geral do corpo */
+body {
+    background-color: var(--cinza-claro);
+    color: var(--azul-escuro);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--azul-escuro);
+    padding: 1rem;
+}
+
+.navbar a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: var(--azul-claro);
+    border-radius: 5px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--azul-claro);
+    padding: 2rem;
+    color: var(--branco);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: var(--azul-escuro);
+    margin-bottom: 10px;
+}
+
+/* Lista de serviços */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: var(--amarelo);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--vermelho);
+}
+
+/* Botões de contato */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: var(--vermelho);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background: var(--azul-claro);
+}
+
+/* Rodapé */
+footer {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    padding: 1rem;
+    margin-top: 20px;
+}

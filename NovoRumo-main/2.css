@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #E3F2FD; /* Azul claro para conforto visual */
+    color: #333;
+}
+
+header {
+    background-color: #1565C0; /* Azul forte para destaque */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+}
+
+.navigation a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #FFD700; /* Amarelo vibrante para acessibilidade */
+}
+
+.quem-somos {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCDD2; /* Rosa suave para contraste agradável */
+}
+
+.content {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img1 {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.servicos {
+    text-align: center;
+    padding: 40px;
+    background-color: #A5D6A7; /* Verde calmo para equilíbrio */
+}
+
+.servicos h2 {
+    color: #2E7D32;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.servicos div {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #D84315; /* Vermelho alaranjado para chamar atenção aos títulos */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.fono {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
