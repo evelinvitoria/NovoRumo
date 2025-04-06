@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - Novo Rumo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Quem Somos</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <header>
+    <h1>Fale Conosco</h1>
+    <p>Entre em contato conosco pelo formulário abaixo</p>
+  </header>
+
+  <div class="container">
+    <form onsubmit="return enviarWhatsApp()">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" required>
+
+      <label for="servicos">Serviços desejados:</label>
+      <select id="servicos" multiple required>
+        <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+        <option value="Psicologia Infantil">Psicologia Infantil</option>
+        <option value="Fonoaudiologia">Fonoaudiologia</option>
+        <option value="Psicopedagogia">Psicopedagogia</option>
+        <option value="Psicomotricidade">Psicomotricidade</option>
+        <option value="Psicomotricidade Aquática">Psicomotricidade Aquática</option>
+      </select>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Associação Novo Rumo - Recife, PE</p>
+  </footer>
+
+  <script>
+    function enviarWhatsApp() {
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const telefone = document.getElementById("telefone").value;
+      const servicos = Array.from(document.getElementById("servicos").selectedOptions).map(opt => opt.value).join(", ");
+      const mensagem = document.getElementById("mensagem").value;
+
+      const texto = `Olá! Meu nome é ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0AServiços: ${servicos}%0AMensagem: ${mensagem}`;
+      const url = `https://wa.me/5581983199646?text=${encodeURIComponent(texto)}`;
+      window.open(url, "_blank");
+
+      return false;
+    }
+  </script>
+</body>
+</html>
