@@ -1,129 +1,174 @@
-/* Resetando estilos padrão do navegador */
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* Fonte padrão */
+.logo {
+  width: auto;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 10px;
+  
+}
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e3f2fd;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Estilo para o cabeçalho */
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  
+  font-weight: bold;
+  padding: 10px 20px;
+ 
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-verde {
+  color: #28a745; ;
+  border-color: #28a745;
+}
+
+.nav-azul {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.nav-vermelho {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.nav-amarelo {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+/* Efeito hover */
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Cabeçalho */
 header {
-    background-color: #005a9c;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
+  background-color: #2196f3;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Contêiner centralizado */
+/* Container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-/* Estilos para as seções */
-section {
-    background-color: #fff;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Serviços */
+.servico {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
 }
 
-section h2 {
-    font-size: 1.8rem;
-    color: #005a9c;
-    margin-bottom: 1rem;
+.servico img {
+  max-width: 100%;
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-section p, section ul {
-    font-size: 1.1rem;
-    color: #555;
+.servico h3 {
+  color: #1565c0;
+  margin: 10px 0 5px;
 }
 
-section ul {
-    list-style-type: none;
-}
-
-section ul li {
-    margin: 0.5rem 0;
-}
-
-/* Estilo para o formulário de agendamento */
+/* Formulário */
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-form input {
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+form input,
+form textarea,
+form select {
+  padding: 10px;
+  border: 1px solid #0c0aa0;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  outline-color: #0c0aa0;
 }
 
 form button {
-    padding: 0.8rem;
-    background-color: #005a9c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.1rem;
-    cursor: pointer;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #003c6b;
+button:hover 
+ button:focus{
+  background-color: #ffffff;
+  color:#007bff;
 }
 
-/* Estilo para os botões de contato */
-a.btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    margin-top: 1rem;
-    background-color: #25d366;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-a.btn:hover {
-    background-color: #128c7e;
-}
-
-/* Estilo para o rodapé */
+/* Rodapé */
 footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #333;
-    color: #fff;
-    margin-top: 2rem;
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
 
-footer p {
-    font-size: 1rem;
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .servico {
+    text-align: center;
+  }
+
+  .servico img {
+    max-height: 200px;
+    object-fit: cover;
+  }
 }
